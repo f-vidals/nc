@@ -7,6 +7,7 @@
     class DataBase
     {
         private static $instance = null;
+        private $hostDB= $_ENV["DATABASE_SERVICE_NAME"];
         //private $BD = "ncbd";
         private $BD = $_ENV["DATABASE_NAME"];
         //private $usrBD = "td";
