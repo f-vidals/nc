@@ -1,0 +1,441 @@
+/* ++++++++++ BODY ++++++++++*/
+.body_class
+{
+    background-color: #F0F0F0;
+    height: 100%;
+    width: 100;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 1000px;
+    overflow: hidden;
+}
+
+/* ++++++++++ TOP ++++++++++*/
+.top_class
+{
+    width: auto;
+    height: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    position: relative;
+    box-shadow: 0 4px 2px -2px #009688;
+}
+.top_class .top_left_class
+{
+}
+.top_class .top_left_class img
+{
+    position: relative;
+    vertical-align: baseline;
+    /*top: 50%;
+    /*transform: translateY(-50%);*/
+
+}
+.top_class .top_right_class
+{
+    height: 100%;
+    /*line-height: 50px;*/
+    width: 86%;
+    font-size: 180%;
+    float: left;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "ABCThru";
+}
+.top_class .top_right_class img
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.top_class .top_right_class img hover
+{
+    background: #3374C2;
+}
+
+/* ++++++++++ CONTAINER +++++++++*/
+.container_class
+{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /*background-color: #F0F0F0;*/
+    /*background-color: blue;*/
+}
+
+/* ---------- MENU LATERAL ----------*/
+.left_class
+{
+    overflow: auto;
+    float: left;
+    position: fixed;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    width: 60px;
+    border-bottom:1px solid silver;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+    background-color: #424242;
+    font-weight: bold;
+    z-index: 2;
+}
+.left_class:hover
+{
+    width: 200px;
+    transition-duration:1s;
+}
+.tabla-menu
+{
+    width: 100%;
+    border: 0px;
+    border-spacing: 0;
+}
+.tabla-menu td
+{
+    padding-left: 5px;
+    padding-right: 5x;
+    font-size: 90%;
+    text-align: left;
+    color: white;
+}
+.tabla-menu td a
+{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    display: inline-block;
+}
+.tabla-menu td img
+{
+    vertical-align: text-bottom;
+}
+
+/* ---------- MENU DESPLEGABLE ----------*/
+.dropbtn
+{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgrey;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+    float:left;
+}
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 3px 5px 5px rgba(0,0,0,0.07);
+    font-size: 13px;
+    z-index: 2;
+    line-height: 40px;
+}
+.dropdown-content a
+{
+    color: black;
+    padding-left: 5px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #274CA7;color:white;}
+
+/* ---------- SUBCONTENEDOR  DERECHO ----------*/
+.right_class
+{
+    overflow: auto;
+    position: relative;
+    float: left;
+    height: 98.5%;
+    width: calc(100% - 68px);
+    top: 5px;
+    left: 65px;
+    z-index: 1;
+    /*background-color: white;*/
+}
+.right_class table
+{
+    width: 98%;
+    margin: 0 auto;
+}
+.right_class table td
+{
+    padding: 10px;
+}
+
+/* ---------- VIEWPORT ----------*/
+.viewport
+{
+    font-size: 85%;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    min-height: 50px;
+    min-width: 500px;
+}
+
+/* ---------- TABLA VIEWPORT ----------*/
+.tablaviewport
+{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.tablaviewport th
+{
+    border-bottom: 3px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.tablaviewport td
+{
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    height: 3em;
+}
+.tablaviewport tbody tr:hover {background-color: #F0F0F0;}
+.fondocolor
+{
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    width: auto;
+    padding: 4px 4px 4px 4px;
+}
+
+/* ---------- PAGINACION ----------*/
+.pagination
+{
+    display: inline-block;
+}
+.pagination a
+{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination a.active
+{
+    background-color: #254AA5;
+    color: white;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+ /* ---------- BARRA PORCENTAJE DENTRO DE TABLA ----------*/
+.barra_porcentaje_class
+{
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    width: 100%;
+}
+.barra_porcentaje_class div
+{
+    border-radius: 3px;
+    font-weight: bold;
+    /* color: black;
+    width: 0%; */
+    /*color: white;*/
+    width: 100%;
+    text-align: center;
+}
+
+ /* ---------- LOADING ----------*/
+.loader
+{
+    display: none;
+    z-index: 200; /*Ecima de todos los divs*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    border: 10px solid #dcdcdc;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin
+{
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin
+{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ---------- BUTTON ----------*/
+.botonbloque
+{
+    display:inline-block;
+    padding:4px;
+    border:0.1em solid #5858FA;
+    width: auto;
+    box-sizing: border-box;
+    color:#5858FA;
+    text-align:center;
+    transition: all 0.2s;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color:#FFFFFF;
+}
+.botonbloque:hover
+{
+    color:#FFFFFF;
+    background-color:#5858FA;
+    cursor:pointer;
+}
+.botontabla
+{
+    display:inline-block;
+    padding:4px;
+    border:0.1em solid #5858FA;
+    width: 100%;
+    box-sizing: border-box;
+    color:#5858FA;
+    text-align:center;
+    transition: all 0.2s;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 90%;
+    background-color:#FFFFFF;
+}
+.botontabla:hover
+{
+    color:#FFFFFF;
+    background-color:#5858FA;
+    cursor:pointer;
+}
+.botontablaasig
+{
+    display:inline-block;
+    padding:4px;
+    border:0.1em solid #00BCD4;
+    width: 100%;
+    box-sizing: border-box;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 90%;
+    background-color:#00BCD4;
+}
+/* ---------- DIV CUADRO CON TITULO GENERAL ----------*/
+.cuadro_titulo_class {
+   font-size: 95%;
+   margin: 5px;
+   border: 1px solid #0094ff;
+   border-radius: 8px;
+   width: 100%;
+   /*height: 300px; Asignarlo en el html */
+   background-color: white;
+}
+.cuadro_titulo_class .viewport_title {
+   background:#448AFF;
+   color:white;
+   padding:8px;
+   margin:0px;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}
+.cuadro_titulo_class .viewport_title img {
+   vertical-align: text-bottom;
+   margin-right: 5px;
+}
+
+.cuadro_titulo_class .viewport_div {
+   overflow: auto;
+   /*height: 100%;*/
+   height: calc(100% - 50px);
+   margin: 5px;
+}
+
+/* ---------- SELECT ----------*/
+select
+{
+    background-color: #F2F2F2;
+    border:1px solid #ccc;
+    font-size: 14px;
+    padding: 7px;
+    /*width: 350px;*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+select:focus
+{
+    border-color: blue;
+}
+
+/* ---------- INPUT ----------*/
+input, textarea
+{
+    background-color: #F2F2F2;
+    font-size: 14px;
+    padding: 7px;
+    /*width: 350px;*/
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    resize: none;
+}
+input:focus, textarea:focus
+{
+    border-color: blue;
+}
+/* ---------- INPUT BUSQUEDA ----------*/
+thead .input_busqueda
+{
+    background-color: #FFFFFF;
+    color: darkgrey;
+    font-size: 13px;
+    padding: 1px;
+    -webkit-border-radius: 0px;
+    border-radius: 5px;
+    width: 10em;
+    border-bottom: 1px solid #ccc;
+    border-top: 0px none white;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    resize: none;
+}
+thead .input_busqueda:focus
+{
+    border-color: blue;
+}
+/* ---------- JQUERY UI ----------*/
+
+.ui-dialog
+{
+    font-size: 85%;
+}
