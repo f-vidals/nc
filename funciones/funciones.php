@@ -7,9 +7,12 @@
     class DataBase
     {
         private static $instance = null;
-        private $BD = "ncbd";
-        private $usrBD = "td";
-        private $pwdBD = "td..";
+        //private $BD = "ncbd";
+        private $BD = $_ENV["DATABASE_NAME"];
+        //private $usrBD = "td";
+        private $usrBD = $_ENV["DATABASE_USER"];
+        //private $pwdBD = "td..";
+        private $pwdBD = $_ENV["DATABASE_PASSWORD"];
         private $conn = null;
         private $query = null;
         private $result = null;
