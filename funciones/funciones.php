@@ -32,7 +32,8 @@
         {
             try
             {
-                $this->conn = new PDO("mysql:host=localhost;dbname=".$this->BD.";charset=utf8",$this->usrBD,$this->pwdBD);
+                #$this->conn = new PDO("mysql:host=localhost;dbname=".$this->BD.";charset=utf8",$this->usrBD,$this->pwdBD);
+                $this->conn = new PDO("mysql:host=$this->hostBD;dbname=".$this->BD.";charset=utf8",$this->usrBD,$this->pwdBD);
                 $this->conn->setAttribute(PDO::ATTR_EMULATE_PREPARES,FALSE);
                 $this->conn->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY,TRUE);
                 $this->conn->setAttribute(PDO::ATTR_TIMEOUT,5);
