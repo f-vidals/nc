@@ -8,7 +8,7 @@
     {
         private static $instance = null;
 
-        private $hostDB= $_ENV["DATABASE_SERVICE_NAME"];
+        private $hostDB= $_ENV["MYSQL_DATABASE"];
 
         //private $BD = "ncbd";
         private $BD = $_ENV["MYSQL_DATABASE"];
