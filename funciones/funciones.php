@@ -7,13 +7,18 @@
     class DataBase
     {
         private static $instance = null;
+
         private $hostDB= $_ENV["DATABASE_SERVICE_NAME"];
+
         //private $BD = "ncbd";
-        private $BD = $_ENV["DATABASE_NAME"];
+        private $BD = $_ENV["MYSQL_DATABASE"];
+
         //private $usrBD = "td";
-        private $usrBD = $_ENV["DATABASE_USER"];
+        private $usrBD = $_ENV["MYSQL_USER"];
+
         //private $pwdBD = "td..";
-        private $pwdBD = $_ENV["DATABASE_PASSWORD"];
+        private $pwdBD = $_ENV["MYSQL_PASSWORD"];
+
         private $conn = null;
         private $query = null;
         private $result = null;
