@@ -8,8 +8,8 @@
     {
         private static $instance = null;
 
-        //private $hostBD= $_ENV["DATABASE_SERVICE_NAME"];
-        private $hostBD='localhost';
+        //private $hostBD= $_ENV["DATABASE_SERVICE_NAME"]; //*** revisar esta asignacion por constructor, openshift no lo permite
+        //private $hostBD='localhost';
         private $hostBD='ncbd';
 
         private $BD = "ncbd";
